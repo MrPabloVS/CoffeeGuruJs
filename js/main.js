@@ -5,6 +5,16 @@ let cool = "";
 let sweet = "";
 let bitter = "";
 
+//Constructor
+function receta(base, primary, secondary){
+    this.base = base
+    this.primary = primary
+    this.secondary = secondary
+}
+
+//Armar recetas
+const receta3 = new receta("Tea", "Tea", "Milk")
+
 //Prompt Iniciales
 warm = prompt("Warm:");
 cool = prompt("Cool:");
@@ -18,7 +28,19 @@ if (warm == "" & cool == "" & sweet == "" & bitter == "") {
     sweet = prompt("Sweet:");
     bitter = prompt("Bitter:")
 }
-else (warm == "Extra Warm" & cool == "Cool" & sweet == "Less Sweet" & bitter == "Less Bitter"); {
+ else if(warm == "Extra Warm" & cool == "Cool" & sweet == "Less Sweet" & bitter == "Less Bitter"); {
     alert("Tea Milk Cinammon")
+
+}
+else if (warm == "Extra Warm" & cool == "Cool" & sweet == "Not Sweet" & bitter == "Bitter");{
+    alert(receta3.base + receta3.primary + receta3.secondary)
+
+}
+else{
+    alert("Vuelva a intentar");
+    warm = prompt("Warm:");
+    cool = prompt("Cool:");
+    sweet = prompt("Sweet:");
+    bitter = prompt("Bitter:")
 }
 
