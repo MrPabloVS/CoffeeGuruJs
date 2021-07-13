@@ -28,12 +28,12 @@ if (warm == "" & cool == "" & sweet == "" & bitter == "") {
     sweet = prompt("Sweet:");
     bitter = prompt("Bitter:")
 }
- else if(warm == "Extra Warm" & cool == "Cool" & sweet == "Less Sweet" & bitter == "Less Bitter"); {
-    alert("Tea Milk Cinammon")
+ else if(warm == "Extra Warm" & cool == "Cool" & sweet == "Less Sweet" & bitter == "Less Bitter") {
+    alert("Tea Milk Cinammon");
 
 }
-else if (warm == "Extra Warm" & cool == "Cool" & sweet == "Not Sweet" & bitter == "Bitter");{
-    alert(receta3.base + receta3.primary + receta3.secondary)
+else if (warm == "Extra Warm" & cool == "Cool" & sweet == "Not Sweet" & bitter == "Bitter"){
+    alert(receta3.base + receta3.primary + receta3.secondary);
 
 }
 else{
