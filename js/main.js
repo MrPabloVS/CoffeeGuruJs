@@ -6,10 +6,12 @@ let sweet = "";
 let bitter = "";
 
 //Constructor
-function receta(base, primary, secondary){
-    this.base = base
-    this.primary = primary
-    this.secondary = secondary
+class receta {
+    constructor(base, primary, secondary) {
+        this.base = base;
+        this.primary = primary;
+        this.secondary = secondary;
+    }
 }
 
 //Armar recetas
