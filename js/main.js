@@ -24,7 +24,7 @@ sweet = prompt("Sweet:");
 bitter = prompt("Bitter:");
 
 if (warm == "" & cool == "" & sweet == "" & bitter == "") {
-    alert("Vuelva a intentar");
+    alert("Ingrese un Valor");
     warm = prompt("Warm:");
     cool = prompt("Cool:");
     sweet = prompt("Sweet:");
