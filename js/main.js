@@ -1,9 +1,15 @@
 
 //Declaracion de Variables
-let warm = "";
-let cool = "";
-let sweet = "";
-let bitter = "";
+let warmInput = "";
+let coolInput = "";
+let sweetInput = "";
+let bitterInput = "";
+
+//Arrays 
+const warm = ["Not Warm", "Less Warm", "Warm", "Extra Warm"];
+const cool = ["Not Cool", "Less Cool", "Cool", "Extra Cool"];
+const sweet = ["Not Sweet", "Less Sweet", "Sweet", "Extra Sweet"]
+const bitter = ["Not Bitter", "Less Bitter", "Bitter", "Extra Biter"]
 
 //Constructor
 class receta {
@@ -20,27 +26,27 @@ const receta3 = new receta("Tea", "Tea", "Milk")
 const receta4 = new receta["Tea", "Tea", "Lemon"]
 
 //Prompt Iniciales
-warm = prompt("Warm:");
-cool = prompt("Cool:");
-sweet = prompt("Sweet:");
-bitter = prompt("Bitter:");
+warmInput = prompt("Warm:");
+coolInput = prompt("Cool:");
+sweetInput = prompt("Sweet:");
+bitterInput = prompt("Bitter:");
 
-if (warm == "" & cool == "" & sweet == "" & bitter == "") {
+if (warmInput == "" & coolInput == "" & sweetInput == "" & bitterInput == "") {
     alert("Ingrese un Valor");
-    warm = prompt("Warm:");
-    cool = prompt("Cool:");
-    sweet = prompt("Sweet:");
-    bitter = prompt("Bitter:")
+    warmInput = prompt("Warm:");
+    coolInput = prompt("Cool:");
+    sweetInput = prompt("Sweet:");
+    bitterInput = prompt("Bitter:")
 }
-else if(warm == "Extra Warm" & cool == "Cool" & sweet == "Less Sweet" & bitter == "Less Bitter") {
+else if(warmInput == "Extra Warm" & coolInput == "Cool" & sweetInput == "Less Sweet" & bitterInput == "Less Bitter") {
     alert("Tea Milk Cinammon");
 
 }
-else if (warm == "Extra Warm" & cool == "Cool" & sweet == "Not Sweet" & bitter == "Bitter"){
+else if (warmInput == "Extra Warm" & coolInput == "Cool" & sweetInput == "Not Sweet" & bitterInput == "Bitter"){
     alert(receta3.base + receta3.primary + receta3.secondary);
 }
 
-else if(warm == "Extra Warm" & cool == "Cool" & sweet == "Not Sweet" & bitter == "Extra Bitter"){
+else if(warmInput == "Extra Warm" & coolInput == "Cool" & sweetInput == "Not Sweet" & bitterInput == "Extra Bitter"){
     alert(receta4[0]+receta4[1]+receta4[2]);
 }
 
@@ -48,9 +54,9 @@ else if(warm == "Extra Warm" & cool == "Cool" & sweet == "Not Sweet" & bitter ==
 
 else{
     alert("Vuelva a intentar");
-    warm = prompt("Warm:");
-    cool = prompt("Cool:");
-    sweet = prompt("Sweet:");
-    bitter = prompt("Bitter:")
+    warmInput = prompt("Warm:");
+    coolInput = prompt("Cool:");
+    sweetInput = prompt("Sweet:");
+    bitterInput = prompt("Bitter:")
 }
 
