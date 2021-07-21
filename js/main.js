@@ -14,8 +14,10 @@ class receta {
     }
 }
 
+
 //Armar recetas
 const receta3 = new receta("Tea", "Tea", "Milk")
+const receta4 = new receta["Tea", "Tea", "Lemon"]
 
 //Prompt Iniciales
 warm = prompt("Warm:");
@@ -30,14 +32,20 @@ if (warm == "" & cool == "" & sweet == "" & bitter == "") {
     sweet = prompt("Sweet:");
     bitter = prompt("Bitter:")
 }
- else if(warm == "Extra Warm" & cool == "Cool" & sweet == "Less Sweet" & bitter == "Less Bitter") {
+else if(warm == "Extra Warm" & cool == "Cool" & sweet == "Less Sweet" & bitter == "Less Bitter") {
     alert("Tea Milk Cinammon");
 
 }
 else if (warm == "Extra Warm" & cool == "Cool" & sweet == "Not Sweet" & bitter == "Bitter"){
     alert(receta3.base + receta3.primary + receta3.secondary);
-
 }
+
+else if(warm == "Extra Warm" & cool == "Cool" & sweet == "Not Sweet" & bitter == "Extra Bitter"){
+    alert(receta4[0]+receta4[1]+receta4[2]);
+}
+
+
+
 else{
     alert("Vuelva a intentar");
     warm = prompt("Warm:");
