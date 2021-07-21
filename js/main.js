@@ -40,6 +40,7 @@ if (warmInput == "" & coolInput == "" & sweetInput == "" & bitterInput == "") {
     sweetInput = prompt("Sweet:");
     bitterInput = prompt("Bitter:")
 }
+
 else if(warmInput == "Extra Warm" & coolInput == "Cool" & sweetInput == "Less Sweet" & bitterInput == "Less Bitter") {
     alert("Tea Milk Cinammon");
 
