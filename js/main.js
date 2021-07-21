@@ -1,5 +1,5 @@
 
-//Declaracion de Variables
+//Declaracion de Variables de entrada
 let warmInput = "";
 let coolInput = "";
 let sweetInput = "";
@@ -26,6 +26,8 @@ const receta3 = new receta("Tea", "Tea", "Milk")
 const receta4 = new receta["Tea", "Tea", "Lemon"]
 const receta5 = new receta["Tea", "Mint", "Tea"]
 const receta6 = new receta["Tea", "Tea", "Mint"]
+const receta7 = new receta["Tea", "Cinammon", "Honey"]
+const receta8 = new receta["Milk", "Cinammon", "Cinammon"]
 
 //Prompt Iniciales
 warmInput = prompt("Warm:");
@@ -38,7 +40,7 @@ if (warmInput == "" & coolInput == "" & sweetInput == "" & bitterInput == "") {
     warmInput = prompt("Warm:");
     coolInput = prompt("Cool:");
     sweetInput = prompt("Sweet:");
-    bitterInput = prompt("Bitter:")
+    bitterInput = prompt("Bitter:");
 }
 
 else if(warmInput == "Extra Warm" & coolInput == "Cool" & sweetInput == "Less Sweet" & bitterInput == "Less Bitter") {
@@ -61,6 +63,14 @@ else if(warmInput == warm[3] & coolInput == cool[3] & sweetInput == sweet[0] & b
     alert(receta6[0]+receta6[1]+receta6[2]);
 }
 
+else if(warmInput == warm[3] & coolInput == cool[1] & sweetInput == sweet[3] & bitterInput == bitter[1]){
+    alert(receta7[0]+receta7[1]+receta7[2]);
+}
+
+else if(warmInput == warm[3] & coolInput == cool[1] & sweetInput == sweet[3] & bitterInput == bitter[0]){
+    alert(receta8[0]+receta8[1]+receta8[2]);
+}
+
 
 
 else{
@@ -68,6 +78,6 @@ else{
     warmInput = prompt("Warm:");
     coolInput = prompt("Cool:");
     sweetInput = prompt("Sweet:");
-    bitterInput = prompt("Bitter:")
+    bitterInput = prompt("Bitter:");
 }
 
