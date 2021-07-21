@@ -24,6 +24,8 @@ class receta {
 //Armar recetas
 const receta3 = new receta("Tea", "Tea", "Milk")
 const receta4 = new receta["Tea", "Tea", "Lemon"]
+const receta5 = new receta["Tea", "Mint", "Tea"]
+const receta6 = new receta["Tea", "Tea", "Mint"]
 
 //Prompt Iniciales
 warmInput = prompt("Warm:");
@@ -48,6 +50,14 @@ else if (warmInput == "Extra Warm" & coolInput == "Cool" & sweetInput == "Not Sw
 
 else if(warmInput == "Extra Warm" & coolInput == "Cool" & sweetInput == "Not Sweet" & bitterInput == "Extra Bitter"){
     alert(receta4[0]+receta4[1]+receta4[2]);
+}
+
+else if(warmInput == warm[3] & coolInput == cool[3] & sweetInput == sweet[1] & bitterInput == bitter[3]){
+    alert(receta5[0]+receta5[1]+receta5[2]);
+}
+
+else if(warmInput == warm[3] & coolInput == cool[3] & sweetInput == sweet[0] & bitterInput == bitter[2]){
+    alert(receta6[0]+receta6[1]+receta6[2]);
 }
 
 
