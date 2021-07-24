@@ -30,17 +30,17 @@ const receta7 = new receta["Tea", "Cinammon", "Honey"]
 const receta8 = new receta["Milk", "Cinammon", "Cinammon"]
 
 //Prompt Iniciales
-warmInput = prompt("Warm:");
-coolInput = prompt("Cool:");
-sweetInput = prompt("Sweet:");
-bitterInput = prompt("Bitter:");
+warmInput = prompt("Ingrese valor: Warm");
+coolInput = prompt("Ingrese valor: Cool");
+sweetInput = prompt("Ingrese valor: Sweet");
+bitterInput = prompt("Ingrese valor: Bitter");
 
 if (warmInput == "" & coolInput == "" & sweetInput == "" & bitterInput == "") {
     alert("Ingrese un Valor");
-    warmInput = prompt("Warm:");
-    coolInput = prompt("Cool:");
-    sweetInput = prompt("Sweet:");
-    bitterInput = prompt("Bitter:");
+    warmInput = prompt("Ingrese valor: Warm");
+    coolInput = prompt("Ingrese valor: Cool");
+    sweetInput = prompt("Ingrese valor: Sweet");
+    bitterInput = prompt("Ingrese valor: Bitter");
 }
 
 else if(warmInput == "Extra Warm" & coolInput == "Cool" & sweetInput == "Less Sweet" & bitterInput == "Less Bitter") {
@@ -75,9 +75,9 @@ else if(warmInput == warm[3] & coolInput == cool[1] & sweetInput == sweet[3] & b
 
 else{
     alert("Vuelva a intentar");
-    warmInput = prompt("Warm:");
-    coolInput = prompt("Cool:");
-    sweetInput = prompt("Sweet:");
-    bitterInput = prompt("Bitter:");
+    warmInput = prompt("Ingrese valor: Warm");
+    coolInput = prompt("Ingrese valor: Cool");
+    sweetInput = prompt("Ingrese valor: Sweet");
+    bitterInput = prompt("Ingrese valor: Bitter");
 }
 
