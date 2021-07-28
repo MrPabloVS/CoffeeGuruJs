@@ -54,7 +54,7 @@ formularioEntrada.onsubmit = function(e){
 
 
     if (warmInput == "" & coolInput == "" & sweetInput == "" & bitterInput == "") {
-        salidaHTML.innerHTML = "Ingrese un valor"
+        salidaHTML.innerHTML = "Select Values"
 
     }
 
@@ -66,8 +66,8 @@ formularioEntrada.onsubmit = function(e){
         salidaHTML.innerHTML = `${receta3.base} ${receta3.primary} ${receta3.secondary}`
     }
 
-    else if(warmInput == "Extra Warm" & coolInput == "Cool" & sweetInput == "Not Sweet" & bitterInput == "Extra Bitter"){
-        alert(receta4[0]+receta4[1]+receta4[2]);
+    else if(warmInput == 3 & coolInput == 2 & sweetInput == 0 & bitterInput == 3){
+        salidaHTML.innerHTML = `${receta4.base} ${receta4.primary} ${receta4.secondary}`
     }
 
     else if(warmInput == warm[3] & coolInput == cool[3] & sweetInput == sweet[1] & bitterInput == bitter[3]){
@@ -89,7 +89,7 @@ formularioEntrada.onsubmit = function(e){
 
 
     else{
-        salidaHTML.innerHTML = "Conbinacion no valida"
+        salidaHTML.innerHTML = "Conbination not valid"
     }
 
 }
