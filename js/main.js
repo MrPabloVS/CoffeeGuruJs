@@ -82,6 +82,14 @@ formularioEntrada.onsubmit = function(e){
         salidaHTML.innerHTML = `${receta8.base} ${receta8.primary} ${receta8.secondary}`
     }
 
+    else if(warmInput == 3 & coolInput == 1 & sweetInput == 1 & bitterInput == 2){
+        salidaHTML.innerHTML = `${receta9.base} ${receta9.primary} ${receta9.secondary}`
+    }
+
+    else if(warmInput == 3 & coolInput == 1 & sweetInput == 3 & bitterInput == 3){
+        salidaHTML.innerHTML = `${receta10.base} ${receta10.primary} ${receta10.secondary}`
+    }
+
 
 
     else{
