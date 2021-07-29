@@ -66,20 +66,20 @@ formularioEntrada.onsubmit = function(e){
         salidaHTML.innerHTML = `${receta4.base} ${receta4.primary} ${receta4.secondary}`
     }
 
-    else if(warmInput == warm[3] & coolInput == cool[3] & sweetInput == sweet[1] & bitterInput == bitter[3]){
-        alert(receta5[0]+receta5[1]+receta5[2]);
+    else if(warmInput == 3 & coolInput == 3 & sweetInput == 1 & bitterInput == 3){
+        salidaHTML.innerHTML = `${receta5.base} ${receta5.primary} ${receta5.secondary}`
     }
 
-    else if(warmInput == warm[3] & coolInput == cool[3] & sweetInput == sweet[0] & bitterInput == bitter[2]){
-        alert(receta6[0]+receta6[1]+receta6[2]);
+    else if(warmInput == 3 & coolInput == 3 & sweetInput == 0 & bitterInput == 2){
+        salidaHTML.innerHTML = `${receta6.base} ${receta6.primary} ${receta6.secondary}`
     }
 
-    else if(warmInput == warm[3] & coolInput == cool[1] & sweetInput == sweet[3] & bitterInput == bitter[1]){
-        alert(receta7[0]+receta7[1]+receta7[2]);
+    else if(warmInput == 3 & coolInput == 1 & sweetInput == 3 & bitterInput == 1){
+        salidaHTML.innerHTML = `${receta7.base} ${receta7.primary} ${receta7.secondary}`
     }
 
-    else if(warmInput == warm[3] & coolInput == cool[1] & sweetInput == sweet[3] & bitterInput == bitter[0]){
-        alert(receta8[0]+receta8[1]+receta8[2]);
+    else if(warmInput == 3 & coolInput == 1 & sweetInput == 3 & bitterInput == 0){
+        salidaHTML.innerHTML = `${receta8.base} ${receta8.primary} ${receta8.secondary}`
     }
 
 
