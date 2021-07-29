@@ -92,8 +92,8 @@ formularioEntrada.onsubmit = function(e){
 
 
 
-    else{
+    /* else{
         salidaHTML.innerHTML = "Conbination not valid"
-    }
+    } */
 
 }
