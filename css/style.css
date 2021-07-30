@@ -1,3 +1,7 @@
 .citybg{
     background-image: url(../img/CT-HeaderCityAnim-1.gif), url(../img/CT-HeaderCloud.png), url(../img/CT-HeaderSky.png);
 }
+
+.selectTxtCenter{
+    text-align: center;
+}

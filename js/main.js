@@ -39,13 +39,13 @@ formularioEntrada.onsubmit = function(e){
     e.preventDefault();
     let inputs = e.target.children;
     console.log(inputs[1].value)
-    console.log(inputs[3].value)
-    console.log(inputs[5].value)
+    console.log(inputs[4].value)
     console.log(inputs[7].value)
+    console.log(inputs[10].value)
     let warmInput = inputs[1].value;
-    let coolInput = inputs[3].value;
-    let sweetInput = inputs[5].value;
-    let bitterInput = inputs[7].value;
+    let coolInput = inputs[4].value;
+    let sweetInput = inputs[7].value;
+    let bitterInput = inputs[10].value;
 
 
 

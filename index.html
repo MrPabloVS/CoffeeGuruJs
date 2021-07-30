@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Talk / Coffee Guru Helper</title>
+    <title>Coffee Talk / Barista Guru Helper</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -35,8 +35,8 @@
 <!--    Selects     -->
 <div class="citybg container-fluid ">
     <form id="form-select" action="#">
-        <p class="text-light">Warm:</p>
-        <select class="form-select " id="selectWarm" aria-label="Default select example">
+        <p class="text-light text-center">Warm:</p>
+        <select class="form-select selectTxtCenter" id="selectWarm" aria-label="Default select example">
             <option selected> </option>
             <option value="0">Not Warm</option>
             <option value="1">Less Warm</option>
@@ -45,7 +45,7 @@
             <label for="selectWarm"> Select how Warm</label>
         </select>
         <br>
-        <p class="text-light">Cool:</p>
+        <p class="text-light text-center">Cool:</p>
         <select class="form-select " aria-label="Default select example">
             <option selected> </option>
             <option value="0">Not Cool</option>
@@ -54,7 +54,7 @@
             <option value="3">Extra Cool</option>
         </select>
         <br>
-        <p class="text-light">Sweet:</p>
+        <p class="text-light text-center">Sweet:</p>
         <select class="form-select " aria-label="Default select example">
             <option selected> </option>
             <option value="0">Not Sweet</option>
@@ -63,7 +63,7 @@
             <option value="3">Extra Sweet</option>
         </select>
         <br>
-        <p class="text-light">Bitter:</p>
+        <p class="text-light text-center">Bitter:</p>
         <select class="form-select" aria-label="Default select example">
             <option selected> </option>
             <option value="0">Not Bitter</option>
@@ -72,14 +72,52 @@
             <option value="3">Extra Bitter</option>
         </select>
         <br>
-        
+        <div class="d-grid gap-2">
             <input type="submit" class="btn btn-dark ">
-        
+        </div>
     </form>
 </div> 
     <!-- Salida -->
-<div class="container-fluid">
-    <p id="pSalida">Select Values </p>
+<div class="container-fluid bg-dark">
+    <p id="pSalida" class="text-light text-center">Select Values </p>
+    <div class="card-group">
+        
+        <!-- Base Card -->
+        <div class="card">
+          <img src="img/neilImg.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Base to be</h5>
+            
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Base</small>
+          </div>
+        </div>
+        
+        <!-- Primary Card -->
+        <div class="card">
+          <img src="img/blankCardsImg.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Primary to be</h5>
+            
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Primary</small>
+          </div>
+        </div>
+
+        <!-- Secondary Card -->
+        <div class="card">
+          <img src="img/neilImg.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Secondary to be</h5>
+            
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Secondary</small>
+          </div>
+        </div>
+      </div>
 </div> 
     <script src="js/global.js"></script>
     <script src="js/recetario.js"></script>
