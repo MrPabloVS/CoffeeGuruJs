@@ -90,6 +90,22 @@ formularioEntrada.onsubmit = function(e){
         salidaHTML.innerHTML = `${receta10.base} ${receta10.primary} ${receta10.secondary}`
     }
 
+    else if(warmInput == 3 & coolInput == 1 & sweetInput == 1 & bitterInput == 1){
+        salidaHTML.innerHTML = `${receta11.base} ${receta11.primary} ${receta11.secondary}`
+    }
+
+    else if(warmInput == 3 & coolInput == 1 & sweetInput == 0 & bitterInput == 2){
+        salidaHTML.innerHTML = `${receta12.base} ${receta12.primary} ${receta12.secondary}`
+    }
+
+    else if(warmInput == 3 & coolInput == 1 & sweetInput == 0 & bitterInput == 3){
+        salidaHTML.innerHTML = `${receta13.base} ${receta13.primary} ${receta13.secondary}`
+    }
+
+    else if(warmInput == 3 & coolInput == 1 & sweetInput == 2 & bitterInput == 2){
+        salidaHTML.innerHTML = `${receta14.base} ${receta14.primary} ${receta14.secondary}`
+    }
+
 
 
     /* else{
