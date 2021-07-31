@@ -24,3 +24,10 @@ class receta {
         this.secondary = secondary;
     }
 }
+
+
+//Lectores
+const salidaHTML = document.getElementById("pSalida")
+const cardBase = document.getElementById("cardBase")
+const cardPrimary = document.getElementById("cardPrimary")
+const cardSecondary = document.getElementById("cardSecondary")

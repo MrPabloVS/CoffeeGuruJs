@@ -1,6 +1,6 @@
 
 
-const salidaHTML = document.getElementById("pSalida")
+// const salidaHTML = document.getElementById("pSalida")
 
 const formularioEntrada = document.getElementById("form-select");
 formularioEntrada.onsubmit = function(e){
@@ -55,7 +55,8 @@ formularioEntrada.onsubmit = function(e){
     }
 
     else if(warmInput == 3 & coolInput == 1 & sweetInput == 1 & bitterInput == 3){
-        salidaHTML.innerHTML = `${receta10.base} ${receta10.primary} ${receta10.secondary}`
+         //salidaHTML.innerHTML = `${receta10.base} ${receta10.primary} ${receta10.secondary}`
+        cambiarTxt(receta10)
     }
 
     else if(warmInput == 3 & coolInput == 1 & sweetInput == 1 & bitterInput == 1){
