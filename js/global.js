@@ -34,3 +34,10 @@ const cardSecondary = document.getElementById("cardSecondary")
 const cardBaseTxt = document.getElementById("cardBaseTxt")
 const cardPrimaryTxt = document.getElementById("cardPrimaryTxt")
 const cardSecondaryTxt = document.getElementById("cardSecondaryTxt")
+
+
+//Inputs
+let warmInput = ""
+let coolInput = ""
+let sweetInput = ""
+let bitterInput = ""

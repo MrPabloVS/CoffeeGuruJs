@@ -1,3 +1,5 @@
+
+//Cambiar Salida
 function cambiarTxt(receta) {
     //Salida de Texto
     salidaHTML.innerHTML = `${receta.base} ${receta.primary} ${receta.secondary}`
@@ -135,3 +137,12 @@ function cambiarTxt(receta) {
 //`<img src="img/ingredientes/base/cofeeImg.png" class="card-img-top" alt="...">`
 //<h5 class="card-title">Base to be</h5>
 //`<h5 class="card-title">Coffee</h5>`
+
+
+//Filtro
+function filtro(warm, cool, sweet, bitter, receta) {
+    if(warmInput == warm & coolInput == cool & sweetInput == sweet & bitterInput == bitter) {
+        cambiarTxt(receta)
+
+    }
+}

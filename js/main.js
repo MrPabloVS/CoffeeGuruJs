@@ -10,10 +10,10 @@ formularioEntrada.onsubmit = function(e){
     console.log(inputs[4].value)
     console.log(inputs[7].value)
     console.log(inputs[10].value)
-    let warmInput = inputs[1].value;
-    let coolInput = inputs[4].value;
-    let sweetInput = inputs[7].value;
-    let bitterInput = inputs[10].value;
+    warmInput = inputs[1].value;
+    coolInput = inputs[4].value;
+    sweetInput = inputs[7].value;
+    bitterInput = inputs[10].value;
 
 
 
@@ -74,6 +74,8 @@ formularioEntrada.onsubmit = function(e){
     else if(warmInput == 3 & coolInput == 1 & sweetInput == 2 & bitterInput == 2){
         cambiarTxt(receta14)
     }
+    
+    filtro(3, 1, 2, 1, r15)
 
 
 
