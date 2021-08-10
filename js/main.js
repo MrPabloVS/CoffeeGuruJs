@@ -76,6 +76,7 @@ formularioEntrada.onsubmit = function(e){
     }
     
     filtro(3, 1, 2, 1, r15)
+    filtro(3, 0, 3, 2, r16)
 
 
 
