@@ -85,3 +85,19 @@ formularioEntrada.onsubmit = function(e){
     } */
 
 }
+
+
+// Instrucciones
+
+$("#btnE").click(function (e) { 
+    e.preventDefault();
+    $("#txtI").slideUp(fast);
+    $("#txtE").slideDown(fast);
+});
+
+$("#btnI").click(function (e) { 
+    e.preventDefault();
+    $("#txtE").slideUp(fast);
+    $("#txtI").slideDown(fast);
+    
+});
