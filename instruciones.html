@@ -7,7 +7,7 @@
     <title>How to use</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
+<body class="bg-secondary">
     <!--       Nav       -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -30,31 +30,39 @@
         </div>
       </nav>
 
+
+      <!-- Idiomas -->
+      <div class="bg-secondary">
+        <p class="text-light">Elegir idiomas  /  Select Lenguage</p>
+        <!-- Botones -->
+        <div>
+          <button id="btnE" class="btn btn-light">Español</button>
+          <button id="btnI" class="btn btn-light">English</button>
+        </div>
+        <div>
+          <div  id="txtE" style="display: none;" class="bg-light">
+            <p>
+              Explicacion en español
+            </p>
+          </div>
+          <div id="txtI" style="display: none;" class="bg-light">
+            <p >
+              Explicacion en Ingles
+            </p>
+          </div>
+        </div>
+      
+
+          <!-- Drive -->
       <div>
-        <div>
-          <button id="btnEspañol">Español</button>
-          <button id="btnIngles">English</button>
-        </div>
-        <div>
-          <p id="txtE" style="display: none;">
-            Explicacion en español
-          </p>
-          <p id="txtI" style="display: none;">
-            Explicacion en Ingles
-          </p>
-        </div>
+          <a href="https://docs.google.com/document/d/171LRTWSzfl-H2yHxDDe3A7kUkgZISX9bbD5vya8ch7I/edit?usp=sharing">Link a drive de explicacion</a>
       </div>
-
-
-
-    <div>
-        <a href="https://docs.google.com/document/d/171LRTWSzfl-H2yHxDDe3A7kUkgZISX9bbD5vya8ch7I/edit?usp=sharing">Link a drive de explicacion</a>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/global.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/recetario.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/instrucciones.js"></script>
 </body>
 </html>
