@@ -14,3 +14,18 @@ const receta13 = new receta(Tea,	Tea,	Tea)
 const receta14 = new receta(Tea,	Honey,	Tea)
 const r15 = new receta(Tea,	Cinammon,	Cinammon)
 const r16 = new receta(Coffee,	Cinammon,	Honey)
+
+//Ahora con Json
+$.getJSON("../Recetas/recetas.json",
+    function (respuesta, estado, ) {
+        if (estado === "success") {
+            let recetasJson = respuesta;
+            console.dir(recetasJson)
+            //console.dir(recetasJson[0].Base) Tea
+            
+            for (const r of recetasJson) {
+                rJson.push(new receta(r.Base, r.Secondary, r.Primary))
+            }
+        }
+    }
+);

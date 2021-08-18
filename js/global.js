@@ -41,3 +41,8 @@ let warmInput = ""
 let coolInput = ""
 let sweetInput = ""
 let bitterInput = ""
+
+
+// Get Json
+let rJson = []
+

@@ -1,5 +1,7 @@
 
 
+console.dir(rJson)
+
 // const salidaHTML = document.getElementById("pSalida")
 
 const formularioEntrada = document.getElementById("form-select");
@@ -16,12 +18,12 @@ formularioEntrada.onsubmit = function(e){
     bitterInput = inputs[10].value;
 
 
-
+    //Filtro Vacio
     if (warmInput == "" & coolInput == "" & sweetInput == "" & bitterInput == "") {
         salidaHTML.innerHTML = "Select Values"
 
     }
-
+    //Filtros antiguos
     else if(warmInput == 3 & coolInput == 2 & sweetInput == 1 & bitterInput == 1) {
         cambiarTxt(receta2)
 
@@ -78,6 +80,8 @@ formularioEntrada.onsubmit = function(e){
     filtro(3, 1, 2, 1, r15)
     filtro(3, 0, 3, 2, r16)
 
+    //Filtros con Array Json
+    filtro(3, 0, 1, 2, rJson[16])
 
 
     /* else{
@@ -87,17 +91,3 @@ formularioEntrada.onsubmit = function(e){
 }
 
 
-// Instrucciones
-
-/* $("#btnE").click(function (e) { 
-    e.preventDefault();
-    $("#txtI").slideUp(fast);
-    $("#txtE").slideDown(fast);
-});
-
-$("#btnI").click(function (e) { 
-    e.preventDefault();
-    $("#txtE").slideUp(fast);
-    $("#txtI").slideDown(fast);
-    
-}); */
