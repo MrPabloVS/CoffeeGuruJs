@@ -16,7 +16,7 @@ const r15 = new receta(Tea,	Cinammon,	Cinammon)
 const r16 = new receta(Coffee,	Cinammon,	Honey)
 
 //Ahora con Json
-$.getJSON("../Recetas/recetas.json",
+$.getJSON("https://raw.githubusercontent.com/MrPabloVS/CoffeeGuruJs/master/Recetas/recetas.json",
     function (respuesta, estado, ) {
         if (estado === "success") {
             let recetasJson = respuesta;
@@ -24,7 +24,7 @@ $.getJSON("../Recetas/recetas.json",
             //console.dir(recetasJson[0].Base) Tea
             
             for (const r of recetasJson) {
-                rJson.push(new receta(r.Base, r.Secondary, r.Primary))
+                rJson.push(new receta(r.Base, r.Primary, r.Secondary))
             }
         }
     }
