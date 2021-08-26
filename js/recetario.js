@@ -1,7 +1,9 @@
 
 
+
+
 //Ahora con Json -------------- ../Recetas/recetas.json --- https://github.com/MrPabloVS/CoffeeGuruJs/blob/master/Recetas/recetas.json
-$.getJSON("https://drive.google.com/file/d/1yEldA9S2_klo1VgAiLQ6zovXBWbZmjwv/view?usp=sharing",
+$.getJSON("../Recetas/recetas.json",
     function (respuesta, estado, ) {
         if (estado === "success") {
             let recetasJson = respuesta;
@@ -16,7 +18,7 @@ $.getJSON("https://drive.google.com/file/d/1yEldA9S2_klo1VgAiLQ6zovXBWbZmjwv/vie
 );
 
 // Juntar Cualidades Json
-$.getJSON("https://drive.google.com/file/d/1yEldA9S2_klo1VgAiLQ6zovXBWbZmjwv/view?usp=sharing",
+$.getJSON("../Recetas/recetas.json",
     function (respuesta, estado, ) {
         if (estado === "success") {
             let recetasJson = respuesta;
