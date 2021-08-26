@@ -25,6 +25,15 @@ class receta {
     }
 }
 
+class cualidades {
+    constructor(warm, cool, sweet, bitter){
+        this.warm = warm
+        this.cool = cool
+        this.sweet = sweet
+        this.bitter = bitter
+    }
+}
+
 
 //Lectores
 const salidaHTML = document.getElementById("pSalida")
@@ -45,4 +54,5 @@ let bitterInput = ""
 
 // Get Json
 let rJson = []
+let cJson = []
 

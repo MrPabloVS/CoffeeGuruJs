@@ -139,10 +139,17 @@ function cambiarTxt(receta) {
 //`<h5 class="card-title">Coffee</h5>`
 
 
-//Filtro
+//Filtros
 function filtro(warm, cool, sweet, bitter, receta) {
     if(warmInput == warm & coolInput == cool & sweetInput == sweet & bitterInput == bitter) {
         cambiarTxt(receta)
 
     }
 }
+
+function filtroJson(cualidades, receta) { 
+    if(warmInput == cualidades.warm & coolInput == cualidades.cool & sweetInput == cualidades.sweet & bitterInput == cualidades.bitter) {
+        cambiarTxt(receta)
+
+    }
+ }
