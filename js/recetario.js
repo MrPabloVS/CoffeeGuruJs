@@ -1,7 +1,7 @@
 
 
 //Ahora con Json -------------- ../Recetas/recetas.json --- https://github.com/MrPabloVS/CoffeeGuruJs/blob/master/Recetas/recetas.json
-$.getJSON("https://github.com/MrPabloVS/CoffeeGuruJs/blob/master/Recetas/recetas.json",
+$.getJSON("https://drive.google.com/file/d/1yEldA9S2_klo1VgAiLQ6zovXBWbZmjwv/view?usp=sharing",
     function (respuesta, estado, ) {
         if (estado === "success") {
             let recetasJson = respuesta;
@@ -16,7 +16,7 @@ $.getJSON("https://github.com/MrPabloVS/CoffeeGuruJs/blob/master/Recetas/recetas
 );
 
 // Juntar Cualidades Json
-$.getJSON("https://github.com/MrPabloVS/CoffeeGuruJs/blob/master/Recetas/recetas.json",
+$.getJSON("https://drive.google.com/file/d/1yEldA9S2_klo1VgAiLQ6zovXBWbZmjwv/view?usp=sharing",
     function (respuesta, estado, ) {
         if (estado === "success") {
             let recetasJson = respuesta;
