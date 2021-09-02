@@ -147,7 +147,70 @@ function filtro(warm, cool, sweet, bitter, receta) {
     }
 }
 
-function filtroJson(cualidades, receta) { 
+function filtroJson(cualidades, receta) {
+    //Filtros 1 Cualidad 
+    if(warmInput == cualidades.warm ) {
+        cambiarTxt(receta)
+
+    }
+    if(coolInput == cualidades.cool ) {
+        cambiarTxt(receta)
+
+    }
+    if(sweetInput == cualidades.sweet ) {
+        cambiarTxt(receta)
+
+    }
+    if(bitterInput == cualidades.bitter) {
+        cambiarTxt(receta)
+
+    }
+
+    //Filtro 2 Cualidades
+    if(warmInput == cualidades.warm & coolInput == cualidades.cool ) {
+        cambiarTxt(receta)
+
+    }
+    if(warmInput == cualidades.warm  & sweetInput == cualidades.sweet ) {
+        cambiarTxt(receta)
+
+    }
+    if(warmInput == cualidades.warm  & bitterInput == cualidades.bitter) {
+        cambiarTxt(receta)
+
+    }
+    if(coolInput == cualidades.cool & sweetInput == cualidades.sweet ) {
+        cambiarTxt(receta)
+
+    }
+    if(coolInput == cualidades.cool & bitterInput == cualidades.bitter) {
+        cambiarTxt(receta)
+
+    }
+    if(sweetInput == cualidades.sweet & bitterInput == cualidades.bitter) {
+        cambiarTxt(receta)
+
+    }
+
+    //Filtros 3 Cualidades
+    if(warmInput == cualidades.warm & coolInput == cualidades.cool & sweetInput == cualidades.sweet ) {
+        cambiarTxt(receta)
+
+    }
+    if(warmInput == cualidades.warm & coolInput == cualidades.cool  & bitterInput == cualidades.bitter) {
+        cambiarTxt(receta)
+
+    }
+    if(warmInput == cualidades.warm &  sweetInput == cualidades.sweet & bitterInput == cualidades.bitter) {
+        cambiarTxt(receta)
+
+    }
+    if(coolInput == cualidades.cool & sweetInput == cualidades.sweet & bitterInput == cualidades.bitter) {
+        cambiarTxt(receta)
+
+    }
+
+    //Filtro Entero
     if(warmInput == cualidades.warm & coolInput == cualidades.cool & sweetInput == cualidades.sweet & bitterInput == cualidades.bitter) {
         cambiarTxt(receta)
 
