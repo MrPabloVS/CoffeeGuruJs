@@ -2,7 +2,7 @@
 //Cambiar Salida
 function cambiarTxt(receta) {
     //Salida de Texto
-    salidaHTML.innerHTML = `${receta.base} ${receta.primary} ${receta.secondary}`
+    salidaHTML.innerHTML = `${receta.base}, ${receta.primary}, ${receta.secondary}`
 
     //Cambiar Cards
         //Base Card
@@ -148,7 +148,16 @@ function filtro(warm, cool, sweet, bitter, receta) {
 }
 
 function filtroJson(cualidades, receta) {
-    //Filtros 1 Cualidad 
+
+    //Filtro Entero
+    if(warmInput == cualidades.warm & coolInput == cualidades.cool & sweetInput == cualidades.sweet & bitterInput == cualidades.bitter) {
+        cambiarTxt(receta)
+
+    }
+ }
+
+ function filtrosParciales(cualidades, receta ){
+      //Filtros 1 Cualidad 
     if(warmInput == cualidades.warm ) {
         cambiarTxt(receta)
 
@@ -206,12 +215,6 @@ function filtroJson(cualidades, receta) {
 
     }
     if(coolInput == cualidades.cool & sweetInput == cualidades.sweet & bitterInput == cualidades.bitter) {
-        cambiarTxt(receta)
-
-    }
-
-    //Filtro Entero
-    if(warmInput == cualidades.warm & coolInput == cualidades.cool & sweetInput == cualidades.sweet & bitterInput == cualidades.bitter) {
         cambiarTxt(receta)
 
     }

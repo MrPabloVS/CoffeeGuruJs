@@ -20,9 +20,13 @@ formularioEntrada.onsubmit = function(e){
 
 
 
+    for (let i = 0; i < rJson.length; i++) {
+        filtrosParciales(cJson[i], rJson[i])
+        
+    }
 
-for (let i = 0; i < rJson.length; i++) {
-    filtroJson(cJson[i], rJson[i])
+    for (let i = 0; i < rJson.length; i++) {
+        filtroJson(cJson[i], rJson[i])
     
-}
+    }
 }
