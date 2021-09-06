@@ -61,5 +61,5 @@ brewPad.push(new nRecipe("Spanish Sahara","../img/namedRecipes/spanishSahara.png
 brewPad.push(new nRecipe("Spiced Lady","../img/namedRecipes/spicedLady.png", Chocolate, Milk, Cinammon,"A British chocolate drink, extremely popular on the '90s."))
 brewPad.push(new nRecipe("STMJ","../img/namedRecipes/STMJ.png", Milk, Ginger, Honey,"Warm booster made of susu(milk), telur(egg), madu(honey), and jahe(ginger); from indonesia."))
 brewPad.push(new nRecipe("Sugar and Spice","../img/namedRecipes/sugarAndSpice.png", Coffee, Honey, Cinammon,"Spicy, Sweet, and natul bliss in a cup."))
-brewPad.push(new nRecipe("Teh Tarik","../img/namedRecipes/tehTarik.png", Tea, Tea, Milk,"Tea with milk, mixed by pouring the two repeatedly between cups; Originally from Malaysia."))
+brewPad.push(new nRecipe("Teh Tarik","../img/namedRecipes/TehTarik.png", Tea, Tea, Milk,"Tea with milk, mixed by pouring the two repeatedly between cups; Originally from Malaysia."))
 brewPad.push(new nRecipe("The Grinch","../img/namedRecipes/theGrinch.png", GreenTea, Ginger, Cinammon,"Green, spicy, and not everyone's cup of tea."))
