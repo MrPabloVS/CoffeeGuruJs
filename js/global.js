@@ -34,6 +34,18 @@ class cualidades {
     }
 }
 
+class nRecipe {
+    constructor(name, img, base, primary, secondary, txt){
+    this.name = name
+    this.img = img
+    this.base = base
+    this.primary = primary
+    this. secondary = secondary
+    this.txt = txt
+
+    }
+}
+
 
 //Lectores
 const salidaHTML = document.getElementById("pSalida")
@@ -43,6 +55,7 @@ const cardSecondary = document.getElementById("cardSecondary")
 const cardBaseTxt = document.getElementById("cardBaseTxt")
 const cardPrimaryTxt = document.getElementById("cardPrimaryTxt")
 const cardSecondaryTxt = document.getElementById("cardSecondaryTxt")
+const cardsContainer = document.getElementById("nameR")
 
 
 //Inputs
@@ -55,4 +68,7 @@ let bitterInput = ""
 // Get Json
 let rJson = []
 let cJson = []
+
+// Named Recipes
+let brewPad = []
 
